@@ -1,0 +1,4 @@
+baseURL = "https://codyschool.com"
+languageCode = "en-us"
+title = "CodySchool"
+theme = "codyschool"

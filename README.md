@@ -1,4 +1,4 @@
-# Welcome to your new Toast site!
+# Cody School
 
 ## scripts
 

@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.wrapper {
+    @apply max-w-3xl mx-auto;
+}

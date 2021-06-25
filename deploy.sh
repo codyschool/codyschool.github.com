@@ -10,8 +10,6 @@ git commit -m 'Committing work in progress'
 # Pull down the file we just committed help avoid merge conflicts
 git subtree pull --prefix=public origin master -m 'Merge origin'
 
-rm -rf public
-
 # Build the project.
 npm run build
 

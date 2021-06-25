@@ -3,9 +3,9 @@
 echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
 git checkout dev 
-git pull origin dev 
-git add -A
-git commit -m 'Committing work in progress'
+git pull origin dev
+git add .
+git commit -am 'Committing work in progress'
 
 # Pull down the file we just committed help avoid merge conflicts
 git subtree pull --prefix=public origin master -m 'Merge origin'

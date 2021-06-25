@@ -2,8 +2,6 @@
 
 echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
-git checkout dev 
-git pull origin dev
 git add .
 git commit -am 'Committing work in progress'
 

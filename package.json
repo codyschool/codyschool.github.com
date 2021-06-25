@@ -1,15 +1,27 @@
 {
-  "name": "codyschool",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cody-school",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "author": "Dang Van Thanh <dangvanthanh@dangthanh.org> (@dangvanthanh)",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "postinstall": "./postinstall.js",
+    "build": "npm run build:css && npm run build:site",
+    "build:css": "NODE_ENV=production postcss --config legacy-commonjs index.css -o public/styles.css",
+    "build:css:watch": "postcss --config legacy-commonjs index.css -o public/styles.css -w",
+    "build:site": "toast incremental ."
   },
   "dependencies": {
-    "next": "10.0.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "@toastdotdev/mdx": "^0.2.3",
+    "esinstall": "^1.1.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4",
+    "toast": "^0.3.43"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "pretty-bytes": "5.6.0"
   }
 }

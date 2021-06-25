@@ -13,7 +13,7 @@ git subtree pull --prefix=public origin master -m 'Merge origin'
 rm -rf public
 
 # Build the project.
-pnpm run build
+npm run build
 
 # Add README.md
 touch public/README.md

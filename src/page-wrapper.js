@@ -9,16 +9,19 @@ const components = {
 export default function PageWrapper(props) {
     return h(MDXProvider, {
         components: components
-    }, h("div", {
-        className: "wrapper"
-    }, h(Helmet, null, h("link", {
+    }, h("div", null, h(Helmet, null, h("link", {
         rel: "stylesheet",
         href: "/styles.css"
     })), h("header", {
         role: "banner"
+    }, h("nav", {
+        className: "wrapper py-4"
     }, h("a", {
-        href: "/"
-    }, "Home")), h("main", {
+        href: "/",
+        className: "title"
+    }, "Cody School"))), h("main", {
         role: "main"
-    }, props.children)));
+    }, h("div", {
+        className: "wrapper"
+    }, props.children))));
 };

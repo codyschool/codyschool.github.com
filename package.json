@@ -1,9 +1,9 @@
 {
-  "name": "toast-default-starter",
+  "name": "codyschool",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
-  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "author": "Dang Van Thanh <dangvanthanh@codyschool.com> (@dangvanthanh)",
   "license": "MIT",
   "scripts": {
     "postinstall": "./postinstall.js",

@@ -1,14 +1,15 @@
-import { h } from "preact";
+import { h, Fragment } from "preact";
 import { Helmet } from "react-helmet";
 import { MDXProvider } from "@mdx-js/preact";
 
 const components = {
   codeblock: (props) => <div class="bg-gray-400" {...props} />,
 };
+
 export default function PageWrapper(props) {
   return (
     <MDXProvider components={components}>
-      <div>
+      <Fragment>
         <Helmet>
           <link rel="stylesheet" href="/styles.css" />
         </Helmet>
@@ -22,7 +23,7 @@ export default function PageWrapper(props) {
         <main role="main">
           <div className="wrapper">{props.children}</div>
         </main>
-      </div>
+      </Fragment>
     </MDXProvider>
   );
 }

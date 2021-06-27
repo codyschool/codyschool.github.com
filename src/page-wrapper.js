@@ -1,4 +1,4 @@
-import { h } from "/web_modules/preact.js";
+import { h, Fragment } from "/web_modules/preact.js";
 import { Helmet } from "/web_modules/react-helmet.js";
 import { MDXProvider } from "/web_modules/@mdx-js/preact.js";
 const components = {
@@ -9,7 +9,7 @@ const components = {
 export default function PageWrapper(props) {
     return h(MDXProvider, {
         components: components
-    }, h("div", null, h(Helmet, null, h("link", {
+    }, h(Fragment, null, h(Helmet, null, h("link", {
         rel: "stylesheet",
         href: "/styles.css"
     })), h("header", {

@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "./postinstall.js",
+    "start": "watchexec -w src npm run build",
     "build": "npm run build:css && npm run build:site",
     "build:css": "NODE_ENV=production postcss --config legacy-commonjs index.css -o public/styles.css",
     "build:css:watch": "postcss --config legacy-commonjs index.css -o public/styles.css -w",

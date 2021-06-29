@@ -19,7 +19,7 @@ function MDXContent({ components , ...props }) {
     }, mdx("heading-link-icon", {
         className: "heading-link-icon",
         parentName: "a"
-    })), "Hello World"), mdx("p", null, "and some content"), mdx("codeblock", {
+    })), "Hello world"), mdx("p", null, "and some content"), mdx("codeblock", {
         className: "language-js",
         codestring: "const thing = {};"
     }, mdx("pre", {

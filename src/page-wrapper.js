@@ -14,14 +14,17 @@ export default function PageWrapper(props) {
           <link rel="stylesheet" href="/styles.css" />
         </Helmet>
         <header role="banner">
-          <nav className="wrapper py-4">
-            <a href="/" className="title">
+          <nav class="wrapper py-4">
+            <a href="/" class="title">
               Cody School
+            </a>
+            <a href="/about">
+              About
             </a>
           </nav>
         </header>
         <main role="main">
-          <div className="wrapper">{props.children}</div>
+          <div class="wrapper">{props.children}</div>
         </main>
       </Fragment>
     </MDXProvider>

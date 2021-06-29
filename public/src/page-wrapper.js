@@ -15,13 +15,15 @@ export default function PageWrapper(props) {
     })), h("header", {
         role: "banner"
     }, h("nav", {
-        className: "wrapper py-4"
+        class: "wrapper py-4"
     }, h("a", {
         href: "/",
-        className: "title"
-    }, "Cody School"))), h("main", {
+        class: "title"
+    }, "Cody School"), h("a", {
+        href: "/about"
+    }, "About"))), h("main", {
         role: "main"
     }, h("div", {
-        className: "wrapper"
+        class: "wrapper"
     }, props.children))));
 };
